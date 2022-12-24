@@ -2,7 +2,7 @@
 
 Lightweight (based on [Alpine](https://www.alpinelinux.org/)) [Docker](https://www.docker.com) image for running [laravel/pint](https://github.com/laravel/pint) code-style fixer regardless of [Laravel](https://laravel.com/) or [PHP](https://www.php.net/) version you may have.
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/syncloudsoftech/pinter/cd)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/syncloudsoftech/pinter/cd.yml?branch=main)
 ![Docker Pulls](https://img.shields.io/docker/pulls/syncloudsoftech/pinter)
 
 ## Usage
