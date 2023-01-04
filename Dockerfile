@@ -1,4 +1,6 @@
-FROM php:8.1-cli-alpine
+ARG phpVersion=8.1
+
+FROM php:${phpVersion}-cli-alpine
 
 COPY --from=composer /usr/bin/composer /usr/local/bin/composer
 
@@ -8,8 +10,10 @@ WORKDIR /tools
 
 RUN composer require laravel/pint
 
-ENTRYPOINT [ "/tools/vendor/bin/pint" ]
+ENV PATH="/tools/vendor/bin:$PATH"
 
 RUN mkdir /workspace
 
 WORKDIR /workspace
+
+CMD [ "pint" ]

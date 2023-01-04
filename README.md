@@ -17,7 +17,7 @@ $ docker run -it --rm -v $PWD:/workspace syncloudsoftech/pinter
 You can pass options to pint such as a `--preset` (default is `laravel`) or `--test` easily as below:
 
 ```shell
-$ docker run -it --rm -v $PWD:/workspace syncloudsoftech/pinter --preset psr12
+$ docker run -it --rm -v $PWD:/workspace syncloudsoftech/pinter pint --preset psr12
 ```
 
 ## Development
